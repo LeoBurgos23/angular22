@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { StudentComponent } from './component/student/student.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DirectivasComponent } from './component/directivas/directivas.component';
 
 
 
@@ -14,11 +16,13 @@ import { StudentComponent } from './component/student/student.component';
     AppComponent,
     NavbarComponent,
     ToolbarComponent,
-    StudentComponent
+    StudentComponent,
+    DirectivasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

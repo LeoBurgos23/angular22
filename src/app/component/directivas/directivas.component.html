@@ -1,0 +1,14 @@
+<h1>
+    Lista de alumnos
+</h1>
+<ol>
+<div *ngFor=" let Persona of ListadeAlumnos  "[ngClass]="Desaprobados > 6 ? 'rojo': 'azul'" >
+  <li *ngIf=" Persona.nota > 5 " >
+      <div>{{Persona.nombre}}-{{Persona.apellid}}-{{Persona.nota}}-{{Persona.estado}}</div>
+    
+</li>
+</div>
+    
+</ol>
+
+
