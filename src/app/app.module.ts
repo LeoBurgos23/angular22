@@ -1,5 +1,7 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,9 @@ import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { StudentComponent } from './component/student/student.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DirectivasComponent } from './component/directivas/directivas.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AbmalumnosComponent } from './component/abmalumnos/abmalumnos.component';
+import { MaterialModule } from 'material/material/material/material.module';
 
 
 
@@ -17,13 +22,21 @@ import { DirectivasComponent } from './component/directivas/directivas.component
     NavbarComponent,
     ToolbarComponent,
     StudentComponent,
-    DirectivasComponent
+    DirectivasComponent,
+    AbmalumnosComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
+   
+    
+    ],
+  
+
   providers: [],
   bootstrap: [AppComponent]
 })
