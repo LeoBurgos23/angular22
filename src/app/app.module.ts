@@ -8,12 +8,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { StudentComponent } from './component/student/student.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivasComponent } from './component/directivas/directivas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AbmalumnosComponent } from './component/abmalumnos/abmalumnos.component';
 import { MaterialModule } from 'material/material/material/material.module';
-
 
 
 @NgModule({
@@ -25,15 +24,22 @@ import { MaterialModule } from 'material/material/material/material.module';
     DirectivasComponent,
     AbmalumnosComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+
    
     
+    ],
+    exports: [
+      MaterialModule
     ],
   
 

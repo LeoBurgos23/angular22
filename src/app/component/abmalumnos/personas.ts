@@ -1,4 +1,5 @@
 export interface Alumnos {
+    id:number
     nombre:string,
     apellido:string,
     nota: number,
@@ -7,37 +8,45 @@ export interface Alumnos {
 
 }
 export let ListaAlumnos: Alumnos[] =[
-    {nombre: 'Harry' , 
+    { id:1,
+    nombre: 'Harry' , 
     apellido: 'Poter' ,
     nota:8 , 
     estado: 'activo'},
 
-    {nombre: 'Hermione' ,
+    {
+        id:2,
+        nombre: 'Hermione' ,
      apellido: 'Granger',
      nota: 10 , 
      estado: 'activo'},
      
-     { nombre: 'Ron' , 
+     { id:3,
+         nombre: 'Ron' , 
      apellido: 'Wesleay' ,
      nota:5 , 
      estado: 'activo'},
     
-     { nombre: 'Draco' ,
+     { id:4,
+         nombre: 'Draco' ,
      apellido: 'Malfoy' ,
      nota:7 , 
      estado: 'activo'},
     
-     { nombre: 'Neville' , 
+     { id:5,
+         nombre: 'Neville' , 
     apellido: 'Longbotton' ,
     nota:3 , 
     estado: 'libre'},
     
-    { nombre: 'Cho' ,
+    { id:6,
+        nombre: 'Cho' ,
      apellido: 'Chang' ,
      nota:9 , 
      estado: 'activo'},
     
-     { nombre: 'Luna' , 
+     { id:7,
+         nombre: 'Luna' , 
     apellido: 'Lovegood' ,
     nota:6 , 
     estado: 'activo'},
