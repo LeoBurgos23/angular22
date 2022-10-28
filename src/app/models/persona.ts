@@ -4,3 +4,9 @@ export interface Persona {
     estado: string
     nota: Number
 }
+
+export interface Curso {
+    nombre: string;
+    comision: number;
+    profesor : string;
+}

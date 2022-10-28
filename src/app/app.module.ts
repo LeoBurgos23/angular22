@@ -13,6 +13,8 @@ import { DirectivasComponent } from './component/directivas/directivas.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AbmalumnosComponent } from './component/abmalumnos/abmalumnos.component';
 import { MaterialModule } from 'material/material/material/material.module';
+import {CursosComponent} from './component/cursos/cursos.component';
+import { DialogComponent } from './component/dialog/dialog.component'
 
 
 @NgModule({
@@ -23,6 +25,9 @@ import { MaterialModule } from 'material/material/material/material.module';
     StudentComponent,
     DirectivasComponent,
     AbmalumnosComponent,
+    CursosComponent,
+    DialogComponent
+    
     
     
   ],

@@ -1,0 +1,28 @@
+
+
+<mat-form-field appearance="outline">
+    <mat-label>Filtrar(outline) :</mat-label>
+    <input type="text" placeholder="Buscar..." matInput>
+</mat-form-field>
+
+ <div class="row">
+<div *ngFor=" let curso of curso" class="col-md-3">
+<mat-card>
+   <mat-card-title> {{curso.nombre}}  </mat-card-title>
+<mat-card-subtitle>Comision: {{curso.comision}}</mat-card-subtitle>
+<img mat-card-image src="https://i.pinimg.com/originals/2d/35/eb/2d35eb7bbec8cd28033ccc2e29e3fd31.jpg" alt="">
+  
+<mat-card-content>Profesor: {{curso.profesor}}</mat-card-content>
+<!--dentro de mat accion existe aling
+entreel subtitulo y el contenido se agregan o se pueden agregar las imagenes para que queden bien-->
+<mat-card-actions align="end">
+    <button mat-flat-button color="primary"> INSCRIBIR </button>
+    <button mat-flat-button> VER </button>
+</mat-card-actions>
+        
+   
+</mat-card>
+
+</div>
+
+ </div>
